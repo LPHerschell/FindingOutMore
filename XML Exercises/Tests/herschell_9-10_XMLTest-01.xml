@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root> <!-- lph(6:12pm)- root tag "<root>" was added -->
+    <sourceDoc>
+        See also (alternative article): https://www.xml.com/articles/2018/02/10/xml-20/
+        <title>The World Wide Success That Is XML</title> <!-- lph(6:08pm)- added "/" to the end tag "<title>" -->
+        <author>Liam Quin</author>
+        <source>
+            <!-- lph(6:05pm)- moved "<ref" next to "target" --> <ref target= "https://www.w3.org/blog/2018/07/the-world-wide-success-that-is-xml/">W3C blog</ref>  <!-- lph(6:00pm)- placed "=" after "target"-->
+            <pubDate when="2018-07-27"></pubDate> <!-- lph(6:02pm)- added end tag "</pubDate>" -->
+        </source>
+    </sourceDoc> <!-- lph(6:10pm)- end tag "</Docsource>" was editted to "</sourceDoc>" -->
+    <text>
+        <headLine>THE WORLD WIDE SUCCESS THAT IS XML</headLine>
+        <byLine><!-- lph(6:15pm) - put quotation marks around 2018-07-27 --><date when="2018-07-27">27 July 2018</date> by <author>Liam Quin</author> | Posted
+            in: <keyWords>XML, standards, validation, xml, xml schema, xquery, XSD, xsl,
+                XSLT</keyWords>
+        </byLine> <!-- lph(6:17pm) changed "</byline>" to "</byLine>" -->
+        <p>Most of the <orgName>XML Working Groups</orgName> have been closed by now; this year saw <orgName type="workGroup">XQuery</orgName> and <orgName type="workGroup">XSLT</orgName>
+            close, their work successfully completed. </p> <!-- lph (6:43pm) - added "</p>" end tag -->
+        <p>As we wind down work on standardizing the XML stack at <orgName>W3C</orgName> it’s worth looking at some of
+            what we have accomplished and why. <codeLang>W3C XML, the Extensible Markup Language</codeLang>, is one of
+            the world’s most widely-used formats for representing and exchanging information. The
+            final <codeLang type="stack">XML stack</codeLang> <!-- lph(6:41pm) - "<codeLang/>" changed to "</codeLang>" --> is more powerful and easier to work with than many people know,
+            especially for people who might not have used XML since its early days.</p> <!-- lph(6:38pm) - changed end tag "<p>" to "</p>" -->
+        <p>Thank you to all who have contributed.</p>
+                <p><author>Liam Quin</author>, leaving <orgName>W3C</orgName> this week after <duration quantity="17" unit="year">almost 17 years with </duration> <!-- lph(6:25pm) moved end tag "</duration>" outside of "<orgName>" tags --><orgName type="workGroup">XML</orgName>.</p>
+    </text>
+</root> <!-- lph(6:13pm) - root end tag "</root>" was added -->
+

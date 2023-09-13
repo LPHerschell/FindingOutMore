@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <sourceDoc>
+        See also (alternative article): https://www.xml.com/articles/2018/02/10/xml-20/
+        <title>The World Wide Success That Is XML<title>
+        <author>Liam Quin</author>
+        <source><ref
+            target "https://www.w3.org/blog/2018/07/the-world-wide-success-that-is-xml/">W3C blog</ref>
+            <pubDate when="2018-07-27">
+        </source>
+    </Docsource>
+    <text>
+        <headLine>THE WORLD WIDE SUCCESS THAT IS XML</headLine>
+        <byLine><date when=2018-07-27>27 July 2018</date> by <author>Liam Quin</author> | Posted
+            in: <keyWords>XML, standards, validation, xml, xml schema, xquery, XSD, xsl,
+                XSLT</keyWords>
+        </byline>
+        <p>Most of the <orgName>XML Working Groups</orgName> have been closed by now; this year saw <orgName type="workGroup">XQuery</orgName> and <orgName type="workGroup">XSLT</orgName>
+            close, their work successfully completed.
+        <p>As we wind down work on standardizing the XML stack at <orgName>W3C</orgName> it’s worth looking at some of
+            what we have accomplished and why. <codeLang>W3C XML, the Extensible Markup Language</codeLang>, is one of
+            the world’s most widely-used formats for representing and exchanging information. The
+            final <codeLang type="stack">XML stack<codeLang/> is more powerful and easier to work with than many people know,
+            especially for people who might not have used XML since its early days.<p>
+        <p>Thank you to all who have contributed.</p>
+        <p><author>Liam Quin</author>, leaving <orgName>W3C</orgName> this week after <duration quantity="17" unit="year">almost 17 years with <orgName type="workGroup">XML</duration></orgName>.</p>
+    </text>
+    </sourceDoc> <!-- lph(5:52pm)- root end tag "</sourceDoc>" was added -->
