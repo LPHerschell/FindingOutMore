@@ -1,0 +1,60 @@
+start = recipe
+recipe =
+    element recipe {
+        element title { text },
+        element author { text },
+        element date { text },
+        element description { text },
+        element note { text },
+        element utensils {
+            element utensil { text }*
+        },
+        element make-ahead { text },
+        element storage-notes { text },
+        element servings {
+            element tested-size { text },
+            element makes { text }
+        },
+        element ingredients {
+            element ingredient {
+                attribute amount { text },
+                attribute weight { text },
+                attribute name { text },
+                attribute additional { text }?
+            }*
+        },
+        element directions {
+            element step { text }*
+        }
+    }
+title = element title { text }
+author = element author { text }
+date = element date { text }
+description = element description { text }
+note = element note { text }
+utensils =
+    element utensils {
+        element utensil { text }*
+    }
+make-ahead = element make-ahead { text }
+storage-notes = element storage-notes { text }
+servings =
+    element servings {
+        element tested-size { text },
+        element makes { text }
+    }
+tested-size = element tested-size { text }
+makes = element makes { text }
+ingredients =
+    element ingredients {
+        element ingredient {
+            attribute amount { text },
+            attribute weight { text },
+            attribute name { text },
+            attribute additional { text }?
+        }*
+    }
+directions =
+    element directions {
+        element step { text }*
+    }
