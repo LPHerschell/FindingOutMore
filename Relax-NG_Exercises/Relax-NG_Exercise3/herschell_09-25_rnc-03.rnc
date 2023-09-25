@@ -1,0 +1,17 @@
+start = steam_deck
+
+steam_deck = element steam_deck {details,specs}
+details = element details {name, producer, year, description}
+name = element name {text}
+producer = element producer {xsd:string}
+year = element year {xsd:int}
+description = element description {xsd:string}
+specs = element specs {storage, ram, display, resolution, os, cpu, battery, grams}
+storage = element storage {text}
+ram = element ram {xsd:string}
+display = element display {xsd:string}
+resolution = element resolution {text}
+os = element os {xsd:string}
+cpu = element cpu {text}
+battery = element battery {xsd:string}
+grams = element grams {xsd:float}

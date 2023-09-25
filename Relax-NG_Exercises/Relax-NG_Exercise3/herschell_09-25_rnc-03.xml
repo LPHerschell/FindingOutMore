@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<!-- lph(7:53pm-09/24/2023) - I wrote a small summary for the specs of Valve's Steam Deck -->
+
+<?xml-model href="herschell_09-25_rnc-03.rnc" type="application/relax-ng-compact-syntax"?>
+
+<steam_deck>
+    <details>
+        <name>Steam Deck</name>
+        <producer>Valve Corporation</producer>
+        <year>2022</year>
+        <description>A handheld gaming device by Valve for PC gaming on the go.</description>
+    </details>
+    <specs>
+        <storage>64GB, 256GB, 512GB</storage>
+        <ram>16GB LPDDR5 RAM</ram>
+        <display>7-inch touchscreen</display>
+        <resolution>1280x800 pixels</resolution>
+        <os>SteamOS 3.0 (Arch Linux-based)</os>
+        <cpu>AMD APU: Zen 2, 4c/8t, RDNA 2 GPU</cpu>
+        <battery>Up to 8 hours</battery>
+        <grams>669</grams>
+    </specs>
+</steam_deck>
+
+<!-- lph(8:50pm-09/24/2023) - As far as I can tell, the file successfully validated. I checked multiple times and I am not experienceing any errors  -->
