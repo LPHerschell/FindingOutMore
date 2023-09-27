@@ -52,8 +52,9 @@ depth = attribute depth {xsd:float}
 equipUse = element equipUse {ref, mixed{(temp | equip | size | equip | equipUse | ingUse | setting | time)*}}
 ingUse = element ingUse {ref*, meas*, unit*, text} #lph (12:05am - 9/27/23) - Added "+" and "*" onto select grouped elements *edit 12*
 ref = attribute ref {xsd:IDREFS}
-combine = element combine {ref, mixed{(ingUse)*}} #lph (12:24am - 9/27/23) - Editted layout of combine element group
-n = attribute n {xsd:string} #lph (9:56pm - 9/26/23) - Editted "xsd:date" to "xsd:string" *edit 7*
+combine = element combine {ref, mixed{(ingUse)*}} #lph (12:24am - 9/27/23) - Editted layout of combine element group *edit 14*
+n = attribute n {xsd:int} #lph (9:56pm - 9/26/23) - Editted "xsd:date" to "xsd:string" *edit 7* 
+#lph (11:40am - 9/27/23) - *Line 57* Editted "xsd:string to the proper "xsd:int" or "xsd:integer" data type *AFTER edit 1*
 
 
 
