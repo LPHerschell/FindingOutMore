@@ -1,0 +1,67 @@
+# DIGIT 110 RELAX NG PRE-TEST HOMEWORK INSTRUCTIONS:  
+# * You're downloading two files: Rename these files according to our standard file naming conventions for Canvas submissions (as in: beshero-rng4.xml and beshero-rng4.rnc)
+# * Make the schema well-formed and document with  # comments where you made change(s). 
+# * Then, associate the schema with the XML file we have provided for the exam.
+# * Next, correct the schema code so that it validates the XML (happy green oXygen for both documents) and document briefly with # comments what you changed and why.
+#  **NOTE**: DO NOT CHANGE the markup in the XML file, except to add your schema line!
+#
+# TIPS: 
+# There are 13 critical errors in this Relax-NG schema that will make oXygen's error-checking box RED. Only a few of them will appear at first in the Relax NG. 
+# More errors will be revealed when you associate the schema with the XML file.
+# Your goal is to correct each of these errors.
+
+# First, correct the schema file so it "turns green" in oXygen and write a comment to document each correction.
+# Then, associate your corrected  schema with the XML (and remove the original schema line). 
+# At that point the other validation errors will become evident in the XML file.)
+# Remember to split your oXygen screen (Window -> Tile Editors Vertically), and carefully examine the XML to see how 
+# the elements are written. 
+# DO NOT CHANGE THE MARKUP IN THE XML FILE. Make ALL corrections in the Relax NG Schema to make the XML valid according to the schema.
+# Save the schema and use the red checkmark in oXygen to check the validation as you go.
+#
+# SUBMITTING YOUR WORK:
+# When you are finished, upload BOTH the schema and the XML file to Canvas using the posted upload point for this exam. 
+# You may zip the files to submit them just as you have done for homework assignments.
+
+start = xml
+xml = element xml {metadata, recipe}
+metadata = element metadata {title, author, editor, source, time, yield?} #lph (9:21pm - 9/26/23) - Added "yield?" *edit 2*
+title = element title {text} #lph (8:14pm - 9/26/23) - editted "(txt)" to be "(text)" *edit 1*
+author = element author {id, text}
+editor = element editor {id, text}
+source = element source {url, text} #lph (9:53pm - 9/26/23) - Added "url" *edit 5*
+time = element time {dur, text}
+yield = element yield { text } #lph (9:22pm - 9/26/23) - Added yield element *edit 3*
+id = attribute id {xsd:ID} #lph (9:53pm - 9/26/23) - Editted "is to "id" *edit 6*
+url = attribute url {xsd:anyURI}
+dur = attribute dur {xsd:duration}
+
+recipe = element recipe {ingList, prep}
+ingList = element ingList {heading, ing+}
+heading = element heading {text}
+ing = element ing {id, meas?, unit?, mixed{alt*}}
+alt = element alt {meas, unit, text}
+meas = attribute meas {xsd:float}
+unit = attribute unit {"pint" | "cup" | "T" | "t"  | "F" | "C" | "inch"} #lph (10:02pm - 9/26/23) - Added "pint" to list of attributes *edit 8*
+prep = element prep {heading, step*} #lph (12:02am - 9/27/23) - Made the "?" a "*" so it could repeat more than once *edit 11*
+step = element step {n, mixed{combine | equip | equipUse | ingUse}*} #lph (12:00am - 9/27/23) - Moved "*" to outside of grouping *edit 10*
+equip = element equip {id, mixed{(temp | size | equipUse | setting | time)*}} #lph (11:48pm - 9/26/23) - Added "temp" to the id list *edit 9*       #lph (12:13am - 9/27/23) - Added "size" to the group *edit 13*
+setting = element setting { text } #lph (9:30pm - 9/26/23) - Added setting element *edit 4*
+temp = element temp {meas, unit, string}
+size = element size {depth, unit, text}
+depth = attribute depth {xsd:float}
+equipUse = element equipUse {ref, mixed{(temp | equip | size | equip | equipUse | ingUse | setting | time)*}}
+ingUse = element ingUse {ref*, meas*, unit*, text} #lph (12:05am - 9/27/23) - Added "+" and "*" onto select grouped elements *edit 12*
+ref = attribute ref {xsd:IDREFS}
+combine = element combine {ref, mixed{(ingUse)*}} #lph (12:24am - 9/27/23) - Editted layout of combine element group
+n = attribute n {xsd:string} #lph (9:56pm - 9/26/23) - Editted "xsd:date" to "xsd:string" *edit 7*
+
+
+
+
+
+
+
+
+
+
+
