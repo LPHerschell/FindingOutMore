@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>March 11, 1909. Thursday</title>
+            <title>March 12, 1909. Friday</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Copyright 1908, By Friendship Calendar Co.New Britain Conn.</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>(March 11) Four ladies dressed in different colored dresses stand, seemingly interacting with each other.</p>
+            <p>(March 12) An image of a lady, presumably Molly, wearing snowshoes that were from "Mr. Weir."</p>
+         </sourceDesc>
+      </fileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <p>Calendar Sheets</p>
+         <p>(March 11) "Erie Tea" is a key phrase that I noticed was underlined.</p>
+         <p>(March 12) Since "snowshoes" are necessary here, it must have snowed quite a bit. Erie never changes.</p>
+      </body>
+  </text>
+
+</TEI>
