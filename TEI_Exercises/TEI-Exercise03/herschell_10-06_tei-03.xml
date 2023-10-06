@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>March 11, 1909. Thursday</title>
+            <title>March 12, 1909. Friday</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Copyright 1908, By Friendship Calendar Co.New Britain Conn.</p>
+         </publicationStmt>
+         <sourceDesc>
+            <msDesc>
+               <msIdentifier>
+                  <repository>Penn State Behrend College Library</repository>
+               </msIdentifier>
+               <physDesc>
+                  <handDesc>
+                     <handNote xml:id="h1" medium="black-ink" script="cursive"> Written in cursive and has underlines highlighting key words. Is in black ink and is in cursive. </handNote>
+                     <handNote xml:id="h2" medium="black-ink" script="print"> Written in mostly capital letters, execept for one "i." Main text is written in black ink and is printed. </handNote>
+                  </handDesc>
+                  <additions>
+                     <locus target="#D1">The left-hand side of this sheet has a drawing of Mary
+                        Behrend in Snowshoes. On the right is the written text.</locus>
+                     <locus target="#D2">Throughout the sheet, there are doodles of snakes and three
+                        leaf clovers. There are two snakes and two clovers above the text, one
+                        clover within the text, and one clover after. At the bottom right hand side,
+                        there is a drawing of the Hammermill Paper Company with the last line of
+                        text beneath it.</locus>
+                  </additions>
+               </physDesc>
+            </msDesc>
+
+            
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="calendarInformation">
+            <p>Calendar Sheets</p>
+         </div>
+         <div type="dayDescription">
+            <p>(March 11) "Erie Tea" is a key phrase that I noticed was underlined.</p>
+         </div>
+         <div type="dayDescription">
+            <p>(March 12) Since "snowshoes" are necessary here, it must have snowed quite a bit. Erie never changes.</p>
+         </div>
+      </body>
+   </text>
+</TEI>
+
